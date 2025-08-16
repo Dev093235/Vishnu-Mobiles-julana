@@ -1,153 +1,342 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vishnu Mobils Julana</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vishnu Mobils Julana — Pro Max Store | Best Deals on Vivo, Oppo, Realme</title>
+  <meta name="description" content="Vishnu Mobils Julana — Latest Vivo, Oppo, Realme phones with full Flipkart‑style specs (RAM, Storage, Battery, Charger, Processor, Camera) and prices. Call/WhatsApp 9255067578." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-      color: #fff;
-      overflow-x: hidden;
+    :root{
+      --bg:#080e1a; --panel:#0b1220; --card:#0e1627; --muted:#9fb0c9;
+      --brand:#06b6d4; --brand2:#8b5cf6; --ok:#22c55e; --ring:0 0 0 12px rgb(14 165 233 /.12)
     }
-    header {
-      background: linear-gradient(90deg, #ff0066, #6600ff);
-      padding: 20px;
-      text-align: center;
-      font-size: 2rem;
-      font-weight: bold;
-      color: #fff;
-      text-shadow: 0px 0px 10px #fff;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 30px;
-    }
-    .card {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 20px;
-      padding: 20px;
-      text-align: center;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card img {
-      width: 150px;
-      height: 250px;
-      object-fit: contain;
-      margin-bottom: 15px;
-      transform: rotateY(0deg);
-      transition: transform 1s;
-    }
-    .card:hover img {
-      transform: rotateY(360deg);
-    }
-    .price {
-      color: #00ffcc;
-      font-size: 1.2rem;
-      margin: 10px 0;
-    }
-    .contact, .social, .map {
-      padding: 30px;
-      text-align: center;
-    }
-    .contact h2, .social h2, .map h2 {
-      color: #ff0066;
-      margin-bottom: 15px;
-    }
-    .social a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #fff;
-      font-size: 1.5rem;
-      transition: color 0.3s;
-    }
-    .social a:hover {
-      color: #00ffcc;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      border-radius: 15px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #111;
-      color: #888;
-      font-size: 0.9rem;
-    }
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:
+      radial-gradient(1200px 600px at 10% 0%,rgba(139,92,246,.22),transparent 40%),
+      radial-gradient(900px 500px at 100% 0%,rgba(6,182,212,.2),transparent 38%),
+      var(--bg);color:#e6eefc;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1200px;margin:0 auto;padding:0 20px}/* header */
+header.sticky{position:sticky;top:0;z-index:90;backdrop-filter:saturate(1.3) blur(10px);background:rgba(7,11,20,.75);border-bottom:1px solid rgba(255,255,255,.06)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:40px;height:40px;border-radius:12px;background:conic-gradient(from 180deg,var(--brand),#22d3ee,#60a5fa,#a78bfa,var(--brand));box-shadow:0 10px 30px rgba(139,92,246,.3);position:relative}
+.logo:after{content:"VM";position:absolute;inset:0;display:grid;place-items:center;font-size:12px;font-weight:900;color:#001018}
+.title{font-weight:900;letter-spacing:.3px}
+.menu{display:flex;gap:18px}
+.menu a{color:#cbd5e1;opacity:.9}
+.menu a:hover{opacity:1}
+
+.btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#001018;border:0;padding:10px 14px;border-radius:12px;font-weight:800;box-shadow:0 10px 24px rgba(6,182,212,.25), inset 0 0 0 1px rgba(255,255,255,.2);transition:.2s;cursor:pointer}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:rgba(255,255,255,.06);color:#dbeafe;border:1px solid rgba(255,255,255,.14);box-shadow:none}
+
+/* hero */
+.hero{padding:44px 0 22px}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:rgba(6,182,212,.12);border:1px dashed rgba(6,182,212,.4);color:#7dd3fc;font-size:12px}
+h1{font-size:44px;line-height:1.06;margin:12px 0 10px}
+.hero p{color:var(--muted);font-size:18px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+
+.heroCard{background:linear-gradient(180deg,rgba(125,211,252,.12),transparent 30%),var(--panel);border:1px solid rgba(255,255,255,.08);padding:16px;border-radius:18px}
+.controls{display:flex;gap:10px;flex-wrap:wrap}
+.controls input,.controls select{background:#071021;border:1px solid rgba(255,255,255,.18);border-radius:12px;color:#e6eefc;padding:12px 14px}
+
+/* products */
+.section{padding:36px 0}
+.section h2{margin:0 0 8px;font-size:30px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+
+.card{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:14px;overflow:hidden}
+.badge{position:absolute;top:12px;left:12px;background:rgba(6,182,212,.18);border:1px solid rgba(6,182,212,.4);padding:6px 8px;border-radius:999px;font-size:12px;color:#7dd3fc}
+
+.phone3d{perspective:1200px;height:260px;margin-top:2px}
+.device{position:relative;width:100%;height:240px;transform-style:preserve-3d;border-radius:22px;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.device.auto{animation:spin 12s linear infinite}
+@keyframes spin{to{transform:rotateY(360deg)}}
+.face{position:absolute;inset:0;border-radius:22px;background:#0d1322;display:grid;place-items:center;overflow:hidden;border:1px solid rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.04), 0 20px 60px rgba(0,0,0,.45)}
+.edge{position:absolute;inset:0;border-radius:22px;background:linear-gradient(180deg,#0c1526,#0a1222);transform:translateZ(6px);box-shadow:0 0 0 1px rgba(255,255,255,.08)}
+.screen{position:absolute;inset:14px;border-radius:16px;background:#000;display:grid;place-items:center;border:1px solid rgba(255,255,255,.06)}
+.screen img{width:84%;height:84%;object-fit:cover;border-radius:12px;opacity:.95}
+.device:hover{transform:rotateY(18deg) rotateX(2deg)}
+
+.titleRow{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-top:8px}
+.price{font-weight:900;color:#7dd3fc}
+.specs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.spec{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:8px;font-size:12px}
+.actions{display:flex;gap:10px;margin-top:12px}
+
+/* contact */
+.contactWrap{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.panel{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:16px}
+
+footer{border-top:1px solid rgba(255,255,255,.08);margin-top:32px;padding:16px 0;color:#a5b4fc}
+
+@media (max-width: 980px){
+  .split{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .contactWrap{grid-template-columns:1fr}
+  .menu{display:none}
+}
+
+/* float bar */
+.floatbar{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);display:flex;gap:10px;background:rgba(2,6,23,.9);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:8px 10px;backdrop-filter:blur(8px);z-index:99}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14)}
+
   </style>
 </head>
 <body>
-  <header>📱 Vishnu Mobils Julana 📱</header>
-
-  <div class="container">
-    <div class="card">
-      <img src="https://i.ibb.co/wh9x8wh/mobile1.png" alt="Vivo Y39">
-      <h3>Vivo Y39</h3>
-      <div class="price">₹16,999</div>
+  <header class="sticky">
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="logo"></div>
+          <div class="title">
+            <div style="font-size:14px;opacity:.8">Official Store</div>
+            <div style="font-size:18px">Vishnu Mobils Julana</div>
+          </div>
+        </div>
+        <div class="menu">
+          <a href="#phones">Phones</a>
+          <a href="#contact">Contact</a>
+          <a href="#map">Map</a>
+          <a href="https://www.instagram.com/vishnumobilejulana" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </nav>
     </div>
-
-    <div class="card">
-      <img src="https://i.ibb.co/L0mGv8n/mobile2.png" alt="Vivo V50E 128GB">
-      <h3>Vivo V50E 128GB</h3>
-      <div class="price">₹26,999</div>
+  </header>  <!-- HERO -->  <section class="hero">
+    <div class="container split">
+      <div>
+        <span class="eyebrow">Best Prices • Genuine Stock • Julana</span>
+        <h1>Top Vivo • Oppo • Realme — <br/>Pro Max Look, Pro Max Deals</h1>
+        <p>Flipkart‑style detailed specs: RAM, Storage, Battery, Charger, Processor & Camera — sab ek jagah. Call/WhatsApp for today’s offers.</p>
+        <div class="cta">
+          <a class="btn" href="tel:+919255067578">📞 Call Now</a>
+          <a class="btn ghost" href="https://wa.me/919255067578?text=Hi%20Vishnu%20Mobils%20Julana%2C%20I%20want%20to%20buy%20a%20phone." target="_blank">💬 WhatsApp</a>
+        </div>
+      </div>
+      <div class="heroCard">
+        <div class="controls">
+          <input id="search" placeholder="Search model, RAM, brand... (e.g. Vivo 8GB)" />
+          <select id="brandFilter">
+            <option value="">All Brands</option>
+            <option>Vivo</option>
+            <option>Oppo</option>
+            <option>Realme</option>
+          </select>
+          <select id="sort">
+            <option value="">Sort</option>
+            <option value="price-asc">Price: Low → High</option>
+            <option value="price-desc">Price: High → Low</option>
+          </select>
+          <button class="btn" onclick="applyFilters()">🔎 Apply</button>
+        </div>
+        <div style="margin-top:8px;color:#9fb0c9;font-size:12px">Tip: Type "8GB", "128", "5000mAh" etc. to filter specs.</div>
+      </div>
     </div>
-
-    <div class="card">
-      <img src="https://i.ibb.co/w4L0DpG/mobile3.png" alt="V50 Vivo 128GB">
-      <h3>V50 Vivo 128GB</h3>
-      <div class="price">₹32,999</div>
+  </section>  <!-- PRODUCTS -->  <section id="phones" class="section">
+    <div class="container">
+      <h2>🔥 Today’s Best Sellers</h2>
+      <div id="grid" class="grid"></div>
     </div>
-
-    <div class="card">
-      <img src="https://i.ibb.co/4RhVqhg/mobile4.png" alt="Oppo F29 256GB">
-      <h3>Oppo F29 256GB</h3>
-      <div class="price">₹23,999</div>
+  </section>  <!-- CONTACT / MAP -->  <section id="contact" class="section">
+    <div class="container contactWrap">
+      <div class="panel">
+        <h2>📞 Contact Us</h2>
+        <p style="color:#9fb0c9">Phone / WhatsApp</p>
+        <p style="font-size:20px;font-weight:800"><a href="tel:+919255067578">+91 92550 67578</a></p>
+        <div class="cta">
+          <a class="btn" href="tel:+919255067578">Call</a>
+          <a class="btn ghost" href="https://wa.me/919255067578?text=Hi%20Vishnu%20Mobils%20Julana%2C%20share%20today%27s%20best%20deals." target="_blank">WhatsApp</a>
+        </div>
+        <div style="margin-top:12px">Follow: <a href="https://www.instagram.com/vishnumobilejulana" target="_blank">Instagram</a></div>
+      </div>
+      <div id="map" class="panel">
+        <h2>📍 Our Location</h2>
+        <p style="color:#9fb0c9">Julana — open in Google Maps</p>
+        <a class="btn" href="https://maps.app.goo.gl/S53eba1H2Dy7F1Rq5?g_st=ac" target="_blank">Open Map</a>
+        <div style="margin-top:10px;border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden">
+          <iframe title="Julana Map" src="https://www.google.com/maps?q=Julana&output=embed" style="width:100%;height:280px;border:0"></iframe>
+        </div>
+      </div>
     </div>
+  </section>  <footer>
+    <div class="container">© 2025 Vishnu Mobils Julana — All Rights Reserved</div>
+  </footer>  <!-- floating quick actions -->  <div class="floatbar">
+    <a class="chip" href="tel:+919255067578">📞 Call</a>
+    <a class="chip" href="https://wa.me/919255067578?text=Hi%20Vishnu%20Mobils%20Julana" target="_blank">💬 WhatsApp</a>
+    <a class="chip" href="#phones">🛍️ View Phones</a>
+  </div>  <script>
+    // ====== PRODUCT DATA (Edit here if needed) ======
+    const products = [
+      {
+        id: 'vivo-y39',
+        brand: 'Vivo',
+        name: 'Vivo Y39',
+        price: 16999,
+        img: 'https://i.ibb.co/wh9x8wh/mobile1.png',
+        specs: {
+          ram: '8GB', storage: '128GB', display: '6.67" FHD+ 120Hz',
+          processor: 'Octa‑core (Dimensity series)', battery: '5000mAh',
+          charger: '33W Fast Charge (Type‑C)', camera: '50MP + 2MP | 16MP front'
+        }
+      },
+      {
+        id: 'vivo-v50e',
+        brand: 'Vivo',
+        name: 'Vivo V50E (128GB)',
+        price: 26999,
+        img: 'https://i.ibb.co/L0mGv8n/mobile2.png',
+        specs: {
+          ram: '8GB', storage: '128GB', display: '6.67" AMOLED 120Hz',
+          processor: 'Snapdragon 6 Gen 1', battery: '5000mAh',
+          charger: '44W FlashCharge', camera: '50MP OIS + 2MP | 16MP front'
+        }
+      },
+      {
+        id: 'vivo-v50',
+        brand: 'Vivo',
+        name: 'Vivo V50 (128GB)',
+        price: 32999,
+        img: 'https://i.ibb.co/w4L0DpG/mobile3.png',
+        specs: {
+          ram: '8GB', storage: '128GB', display: '6.78" AMOLED 120Hz',
+          processor: 'Snapdragon 7s Gen 2', battery: '5000mAh',
+          charger: '80W FlashCharge', camera: '50MP OIS + 8MP | 50MP front'
+        }
+      },
+      {
+        id: 'oppo-f29',
+        brand: 'Oppo',
+        name: 'Oppo F29 (256GB)',
+        price: 23999,
+        img: 'https://i.ibb.co/4RhVqhg/mobile4.png',
+        specs: {
+          ram: '8GB', storage: '256GB', display: '6.7" AMOLED 120Hz',
+          processor: 'Dimensity 7050', battery: '5000mAh',
+          charger: '67W SUPERVOOC', camera: '64MP + 2MP | 32MP front'
+        }
+      },
+      {
+        id: 'realme-14x',
+        brand: 'Realme',
+        name: 'Realme 14X (6/128)',
+        price: 14999,
+        img: 'https://i.ibb.co/8c2fjQ2/mobile5.png',
+        specs: {
+          ram: '6GB', storage: '128GB', display: '6.67" FHD+ 120Hz',
+          processor: 'Dimensity 6100+', battery: '5000mAh',
+          charger: '45W SUPERVOOC', camera: '50MP + 2MP | 16MP front'
+        }
+      },
+      {
+        id: 'realme-p3x',
+        brand: 'Realme',
+        name: 'Realme P3x (6/128)',
+        price: 12999,
+        img: 'https://i.ibb.co/XZTcByM/mobile6.png',
+        specs: {
+          ram: '6GB', storage: '128GB', display: '6.72" FHD+ 90Hz',
+          processor: 'Dimensity 6100+', battery: '5000mAh',
+          charger: '45W SUPERVOOC', camera: '50MP + 2MP | 8MP front'
+        }
+      }
+    ];
 
-    <div class="card">
-      <img src="https://i.ibb.co/8c2fjQ2/mobile5.png" alt="Realme 14X 6/128">
-      <h3>Realme 14X 6/128</h3>
-      <div class="price">₹14,999</div>
-    </div>
+    // ====== RENDER ======
+    const grid = document.getElementById('grid');
+    function specChip(label, value){
+      return `<div class="spec"><strong>${label}:</strong> ${value}</div>`;
+    }
+    function cardTemplate(p){
+      return `
+      <div class="card" data-brand="${p.brand}" data-name="${p.name.toLowerCase()}" data-all="${JSON.stringify(p).toLowerCase()}">
+        <span class="badge">${p.brand}</span>
+        <div class="phone3d">
+          <div class="device auto" onmousedown="dragStart(event,this)" ontouchstart="dragStart(event,this)">
+            <div class="edge"></div>
+            <div class="face">
+              <div class="screen">
+                <img src="${p.img}" alt="${p.name}" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="titleRow">
+          <div>
+            <div style="font-weight:800">${p.name}</div>
+            <div style="font-size:12px;color:#9fb0c9">${p.specs.ram} • ${p.specs.storage} • ${p.specs.display}</div>
+          </div>
+          <div class="price">₹${p.price.toLocaleString('en-IN')}</div>
+        </div>
+        <div class="specs">
+          ${specChip('RAM', p.specs.ram)}
+          ${specChip('Storage', p.specs.storage)}
+          ${specChip('Battery', p.specs.battery)}
+          ${specChip('Charger', p.specs.charger)}
+          ${specChip('Processor', p.specs.processor)}
+          ${specChip('Camera', p.specs.camera)}
+        </div>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/919255067578?text=Hi%20Vishnu%20Mobils%20Julana%2C%20I%20want%20to%20buy%20${encodeURIComponent(p.name)}%20(₹${p.price})" target="_blank">🛒 Buy on WhatsApp</a>
+          <a class="btn ghost" href="tel:+919255067578">📞 Call</a>
+        </div>
+      </div>`
+    }
+    function render(list){
+      grid.innerHTML = list.map(cardTemplate).join('');
+    }
+    render(products);
 
-    <div class="card">
-      <img src="https://i.ibb.co/XZTcByM/mobile6.png" alt="Realme P3x 6/128">
-      <h3>Realme P3x 6/128</h3>
-      <div class="price">₹12,999</div>
-    </div>
-  </div>
+    // ====== FILTERS ======
+    const q = document.getElementById('search');
+    const brand = document.getElementById('brandFilter');
+    const sort = document.getElementById('sort');
+    function applyFilters(){
+      let v = q.value.trim().toLowerCase();
+      let b = brand.value;
+      let result = products.filter(p => {
+        const hay = (p.name + ' ' + p.brand + ' ' + JSON.stringify(p.specs)).toLowerCase();
+        const brandOk = !b || p.brand === b;
+        const textOk = !v || hay.includes(v);
+        return brandOk && textOk;
+      });
+      if(sort.value === 'price-asc') result.sort((a,b)=>a.price-b.price);
+      if(sort.value === 'price-desc') result.sort((a,b)=>b.price-a.price);
+      render(result);
+    }
 
-  <div class="contact">
-    <h2>📞 Contact Us</h2>
-    <p>Phone / WhatsApp: <a href="tel:+919255067578" style="color:#00ffcc;">+91 92550 67578</a></p>
-  </div>
+    // ====== 3D DRAG ROTATE ======
+    let dragging = null, startX = 0, startRot = 0;
+    function dragStart(e, el){
+      e.preventDefault();
+      dragging = el; el.classList.remove('auto');
+      startX = (e.touches? e.touches[0].clientX: e.clientX);
+      const m = el.style.transform.match(/rotateY([-0-9.]+)deg/);
+      startRot = m ? parseFloat(m[1]) : 0;
+      window.addEventListener('mousemove', dragMove);
+      window.addEventListener('touchmove', dragMove, {passive:false});
+      window.addEventListener('mouseup', dragEnd);
+      window.addEventListener('touchend', dragEnd);
+    }
+    function dragMove(e){
+      if(!dragging) return;
+      const x = (e.touches? e.touches[0].clientX: e.clientX);
+      const dx = x - startX; // px to deg
+      const rot = startRot + dx * 0.4;
+      dragging.style.transform = `rotateY(${rot}deg)`;
+    }
+    function dragEnd(){ dragging = null; }
 
-  <div class="map">
-    <h2>📍 Our Location</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3488.729797929333!2d76.3862316!3d28.606421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3912e5b19f8d37c5%3A0xfba98a3c1b7ffb2d!2sJulana!5e0!3m2!1sen!2sin!4v1692199999999" allowfullscreen=""></iframe>
-  </div>
+    // expose for inline handlers
+    window.applyFilters = applyFilters;
+    window.dragStart = dragStart;
 
-  <div class="social">
-    <h2>🔗 Follow Us</h2>
-    <a href="https://www.instagram.com/vishnumobilejulana" target="_blank">📸 Instagram</a>
-    <a href="#">👍 Facebook</a>
-    <a href="#">🐦 Twitter</a>
-  </div>
-
-  <footer>
-    © 2025 Vishnu Mobils Julana | All Rights Reserved
-  </footer>
-</body>
-</html>
+  </script></body>
+  </html>
