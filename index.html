@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vishnu Mobile Julana - Best Mobile Phones</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vishnu Mobile Julana - Best Mobiles</title>
+    <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -13,28 +13,36 @@
             <h1 class="logo">Vishnu Mobile Julana</h1>
             <p class="tagline">Near Punjabi Colony, Main Bazar, Julana</p>
             <nav>
-                <input type="text" id="searchBar" placeholder="Search phones..." />
+                <input type="text" id="searchBar" placeholder="Search mobiles, brands...">
             </nav>
         </div>
     </header>
 
     <main>
         <section class="products-section container">
-            <h2>Available Mobile Phones</h2>
-            <div id="productsGrid" class="products-grid">
-                <!-- Product cards inserted here by JS -->
-            </div>
+            <h2>Available Mobiles</h2>
+            <div id="productsGrid" class="products-grid"></div>
         </section>
 
         <section class="contact-section container">
-            <h2>Contact Us</h2>
-            <p>Phone: <a href="tel:+919255067578">+91 92550 67578</a></p>
-            <p>Email: <a href="mailto:newvishnumobile@gmail.com">newvishnumobile@gmail.com</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/vishnumobilejulana" target="_blank">@vishnumobilejulana</a></p>
-            <p>Address: Near Punjabi Colony, Main Bazar, Julana</p>
+            <h2>Contact Vishnu Mobile Julana</h2>
+            <p><b>Phone:</b> <a href="tel:+919255067578">+91 92550 67578</a></p>
+            <p><b>Email:</b> <a href="mailto:newvishnumobile@gmail.com">newvishnumobile@gmail.com</a></p>
+            <p><b>Instagram:</b> <a href="https://www.instagram.com/vishnumobilejulana" target="_blank">@vishnumobilejulana</a></p>
+            <p><b>Address:</b> Near Punjabi Colony, Main Bazar, Julana</p>
             <p><a href="https://maps.app.goo.gl/S53eba1H2Dy7F1Rq5?g_st=ac" target="_blank">View on Map</a></p>
         </section>
     </main>
+
+    <!-- PRODUCT MODAL (POPUP) -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div class="modal-body">
+                <!-- Filled dynamically -->
+            </div>
+        </div>
+    </div>
 
     <footer>
         <p>© 2025 Vishnu Mobile Julana. All rights reserved.</p>
